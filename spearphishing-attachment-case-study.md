@@ -7,7 +7,7 @@ A user reported a suspicious email claiming to be from Adobe with a Word documen
 ---
 
 ## Tools Used  
-- TheHive (Case Management)  
+- TheHive (Case Management)   
 - VirusTotal (Threat Intelligence)  
 - Wazuh (SIEM)  
 - Any.Run (Sandbox Analysis)  

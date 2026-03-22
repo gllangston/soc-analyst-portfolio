@@ -22,17 +22,21 @@ I analyzed the email and noticed inconsistencies, including an invalid DKIM sign
 ---
 
 ### File Analysis (VirusTotal)  
-The file hash was checked in VirusTotal, where multiple vendors flagged it as malicious and associated it with a known exploit.
+The file hash was checked in VirusTotal, where multiple vendors flagged it as malicious and associated it with a known exploit. <img width="1414" height="770" alt="VirusTotal Hits" src="https://github.com/user-attachments/assets/981e1914-b6a8-47a1-b9ef-28307170c8cd" />
+
+
 
 ---
 
 ### Behavioral Analysis (Sandbox)  
-The file behavior was analyzed in a sandbox environment, revealing that the Word document triggered PowerShell execution and initiated external communication.
+The file behavior was analyzed in a sandbox environment, revealing that the Word document triggered PowerShell execution and initiated external communication. <img width="1245" height="704" alt="Screenshot 2026-03-21 153632" src="https://github.com/user-attachments/assets/9ea561b4-122a-4a47-a4b7-cee8de46246f" />
+
 
 ---
 
 ### SIEM Investigation (Wazuh)  
-Logs showed PowerShell execution and outbound connections to a known malicious IP address (159.65.249.205), confirming the file executed.
+Logs showed PowerShell execution and outbound connections to a known malicious IP address (159.65.249.205), confirming the file executed. <img width="1407" height="826" alt="Wazuh Log PowerShell + IP" src="https://github.com/user-attachments/assets/837bd0f1-b27f-4395-83a5-02f4565c2daa" />
+
 
 ---
 

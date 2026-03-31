@@ -6,7 +6,7 @@ Initial Triage
 Accessed SIEM
 Filtered logs by timeframe:
 Feb 1, 2024 | 19:00 – 19:30
-Identified 71 events related to Squid proxy activity 71 hits.png
+Identified 71 events related to Squid proxy activity 
 Log Analysis
 Focused on:
 Squid: URI Connection Established

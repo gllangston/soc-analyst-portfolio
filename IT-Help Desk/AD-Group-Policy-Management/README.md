@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this lab, I configured and applied a Group Policy Object (GPO) to enforce user restrictions within a domain environment. The objective was to simulate a real-world help desk/admin scenario where user access needs to be controlled across multiple systems.
+In this lab, I configured and applied a Group Policy Object (GPO) to enforce user restrictions within a domain environment. This simulates a real-world help desk/admin scenario where user access must be controlled across multiple systems.
 
 ---
 
@@ -38,7 +38,7 @@ Users should not have access to Control Panel or system settings in order to pre
 
 A new Group Policy Object was created to manage the restriction.
 
-![Create GPO](New GPO.png)
+![Create GPO](new-gpo.png)
 
 ---
 
@@ -53,7 +53,7 @@ User Configuration → Policies → Administrative Templates → Control Panel
 Policy:
 **Prohibit access to Control Panel and PC settings**
 
-![Locate Setting](Prohibit access to Control Panel.png)
+![Locate Setting](locate-control-panel-setting.png)
 
 ---
 
@@ -61,15 +61,15 @@ Policy:
 
 The policy was set to **Enabled** to enforce the restriction.
 
-![Enable Policy](Prohibit accrssd to control planel enabled.png)
+![Enable Policy](enable-control-panel-policy.png)
 
 ---
 
 ## Step 4: Link GPO to Organizational Unit
 
-The GPO (`Block-Control-Panel`) was linked to the appropriate OU (`Corp-Users`) to apply the restriction to targeted users.
+The GPO (`Block-Control-Panel`) was linked to the `Corp-Users` OU to apply the restriction to targeted users.
 
-![Link GPO](Block control panel.png)
+![Link GPO](block-control-panel.png)
 
 ---
 
@@ -81,7 +81,7 @@ After applying the policy and running `gpupdate /force`, the restriction was tes
 
 The user was unable to access Control Panel, and the following message was displayed:
 
-![Restriction Message](control panel restriction.png)
+![Restriction Message](control-panel-blocked.png)
 
 ---
 
@@ -96,7 +96,7 @@ The user was unable to access Control Panel, and the following message was displ
 
 ## Reflection
 
-This lab demonstrated how organizations enforce security and configuration standards using Group Policy. It reinforced the importance of centralized control and how misconfigured or missing policies can impact system security.
+This lab demonstrated how organizations enforce security and configuration standards using Group Policy. It reinforced the importance of centralized control and how policies can directly impact user behavior and system security.
 
 ---
 

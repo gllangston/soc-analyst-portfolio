@@ -1,7 +1,7 @@
 # Active Directory File Share & Permissions Lab
 
 ## Overview
-In this project, I configured a secure file share in an Active Directory environment. The goal was to control access using security groups, remove default permissions, and validate access from a domain-joined client machine.
+In this project, I configured a secure file share in an Active Directory environment. The goal was to control access using security groups, remove inherited permissions, and validate access from a domain-joined client machine.
 
 ---
 
